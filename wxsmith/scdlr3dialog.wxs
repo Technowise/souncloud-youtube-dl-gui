@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="scdlr3Dialog">
+		<title>SoundCloud and YouTube Downloader</title>
+		<size>584,242</size>
+		<style>wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxMINIMIZE_BOX</style>
+		<object class="wxGridBagSizer" variable="GridBagSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="UrlTextCtrl" member="yes">
+					<value>URL</value>
+					<size>570,18</size>
+				</object>
+				<col>0</col>
+				<row>0</row>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON1" variable="DownloadButton" member="yes">
+							<label>Download</label>
+							<handler function="OnDownloadButtonClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<col>0</col>
+				<row>4</row>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxCheckBox" name="ID_CHECKBOX1" variable="OpenContaningFolderCheckBox" member="yes">
+					<label>Open Containing folder after download</label>
+				</object>
+				<col>0</col>
+				<row>5</row>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxDirPickerCtrl" name="ID_DIRPICKERCTRL1" variable="DirPickerCtrl" member="yes">
+					<message></message>
+					<size>264,23</size>
+				</object>
+				<col>0</col>
+				<row>2</row>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxGauge" name="ID_GAUGE1" variable="ProgressGauge" member="yes">
+					<size>179,27</size>
+				</object>
+				<col>0</col>
+				<row>6</row>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>
